@@ -1,0 +1,32 @@
+.profile {
+  flex-grow: 1;
+  padding: 24px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.group {
+  width: 100%;
+  background: #212123;
+  border-radius: 50px;
+  color: var(--dark-sea);
+  padding: 12px 24px;
+  background: var(--bg);
+}
+
+.group input {
+  width: 100%;
+  background-color: var(--bg);
+}
+
+.submit {
+  min-width: 100px;
+  max-width: 180px;
+  margin: 0 auto;
+}

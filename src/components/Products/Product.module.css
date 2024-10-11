@@ -1,0 +1,161 @@
+.product {
+  display: flex;
+  flex-grow: 1;
+  max-width: calc(100% - 324px);
+  padding: 24px;
+  column-gap: 32px;
+  color: var(--light);
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.images {
+  display: flex;
+  gap: 20px;
+}
+
+.current {
+  width: 375px;
+  height: 375px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 6px;
+  border-radius: 30px;
+}
+
+.images-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.image {
+  width: 90px;
+  height: 90px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 6px;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+.title {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 500;
+  color: var(--dark-sea)
+}
+
+.price {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  margin: 10px 0 20px 0;
+  color: var(--dark-sea)
+}
+
+.color,
+.sizes {
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: capitalize;
+  display: flex;
+  column-gap: 16px;
+  align-items: center;
+}
+
+.sizes {
+  margin: 16px 0;
+}
+
+.color span,
+.sizes span {
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--dark-sea);
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
+
+.size {
+  padding: 4px 8px;
+  border-radius: 50px;
+  background: var(--bg);
+  cursor: pointer;
+}
+
+.size:hover,
+.size.active {
+  background: var(--accent);
+  color: var(--bg)
+}
+
+.description {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: var(--grey);
+}
+
+.actions {
+  margin-top: 20px;
+  display: flex;
+  column-gap: 10px;
+}
+
+.favourite {
+  background: var(--accent);
+  border-radius: 30px;
+  color: var(--bg)
+}
+
+.favourite:hover {
+  background: var(--bg);
+  border-radius: 30px;
+}
+
+.icon-fav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  stroke: var(--bg);
+  fill: none;
+  width: 20px;
+  height: 20px;
+}
+
+.icon-fav:hover {
+  stroke: var(--accent);
+}
+
+.favourite:hover .icon-fav{
+  stroke: var(--accent);
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 10px;
+  line-height: 12px;
+  color: var(--dark-sea);
+  margin-top: auto;
+}
+
+.add:disabled {
+  cursor: not-allowed;
+  background: var(--hover);
+  color: var(--dark-sea);
+  border: none;
+}
+
+

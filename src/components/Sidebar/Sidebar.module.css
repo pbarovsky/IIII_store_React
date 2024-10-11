@@ -1,0 +1,45 @@
+.sidebar {
+  width: 304px;
+  padding: 24px;
+  height: 520px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 30px;
+}
+
+.title {
+  font-weight: 600;
+  line-height: 20px;
+  color: var(--accent)
+}
+
+.menu {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+
+.link {
+  color: var(--dark-sea);
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: capitalize;
+}
+
+.link:hover {
+  color: var(--accent);
+}
+
+.link.active {
+  color: var(--accent);
+  border-radius: 30px;
+  padding: 5px 25px;
+  border: 1px solid var(--accent);
+}
+
+.footer {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+}

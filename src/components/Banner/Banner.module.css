@@ -1,0 +1,80 @@
+.banner {
+  display: flex;
+  width: 100%;
+  height: 570px;
+}
+
+.left {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+}
+
+.left:before,
+.left:after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+.left:before {
+  width: 204px;
+  height: 170px;
+  left: -25px;
+  bottom: 74px;
+  background: url(../../images/shoe.png) no-repeat center/contain;
+}
+
+.left:after {
+  width: 269px;
+  height: 151px;
+  right: -25px;
+  bottom: -25px;
+  background: url(../../images/devices.png) no-repeat center/contain;
+}
+
+.content {
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 85px;
+  text-align: center;
+}
+
+.content span {
+  line-height: 183px;
+  font-size: 150px;
+  display: block;
+}
+
+.more {
+  margin-top: 27px;
+}
+
+.right {
+  width: 50%;
+  position: relative;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.discount {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: var(--bg);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 24px;
+}
+
+.discount span {
+  color: var(--accent);
+  font-weight: 700;
+}
